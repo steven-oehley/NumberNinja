@@ -34,19 +34,12 @@ checkBtn.addEventListener('click', () => {
 `;
 
     document.body.style.backgroundSize = 'cover';
-  } else if (userGuess > ninjaNumber) {
+  } else if (userGuess !== ninjaNumber) {
     if (gameScore > 1) {
-      messageEl.textContent = '☝️ Guess was too high!';
-      gameScore--;
-      gameScoreEl.textContent = gameScore;
-    } else {
-      messageEl.textContent = "You lost the Ninja's Game 💀!";
-      gameScore--;
-      gameScoreEl.textContent = gameScore;
-    }
-  } else if (userGuess < ninjaNumber) {
-    if (gameScore > 1) {
-      messageEl.textContent = '👇 Guess was too low!';
+      messageEl.textContent =
+        userGuess > ninjaNumber
+          ? '☝️ Guess was too high!'
+          : '👇 Guess was too low!';
       gameScore--;
       gameScoreEl.textContent = gameScore;
     } else {
