@@ -23,28 +23,32 @@
     />
     <link rel="manifest" href="./src/favicon/site.webmanifest" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <title>Guess My Number!</title>
+    <title>Number Ninja</title>
   </head>
   <body>
     <header>
-      <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="btn again">Again!</button>
+      <div class="header-content">
+        <h1>Number Ninja - Guess the Ninja's Number <br />🥷</h1>
+        <p class="between">(Between 1 and 20)</p>
+        <button class="btn again">Again!</button>
+      </div>
       <div class="number">?</div>
     </header>
     <main>
       <section class="left">
-        <input type="number" class="guess" />
+        <input type="number" class="guess" min="1" max="20" />
         <button class="btn check">Check!</button>
       </section>
       <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
+        <div class="right-content">
+          <p class="message">Start guessing...</p>
+          <p class="label-score">💯 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </div>
       </section>
     </main>
-    <script src="script.js"></script>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>

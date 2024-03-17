@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@font-face {
+  font-family: 'Ninja';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/Fighting\ Spirit\ 2.ttf') format('truetype');
+  /* You might need to update this URL to match your font source */
+}
 
 * {
   margin: 0;
@@ -12,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'Ninja', sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -54,6 +60,7 @@ h1 {
   top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #de0500;
 }
 
 .number {
@@ -103,6 +110,10 @@ h1 {
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 .btn:hover {
