@@ -2,6 +2,7 @@
 
 Number Ninja is a simple guessing game where players try to guess a random number chosen by the "Ninja".
 The game interface is designed with a Ninja theme and provides feedback on the player's guesses.
+A live demo of the project is available here - <a href="https://number-ninja-steve.netlify.app/">Number Ninja Live Demo</a>
 
 ## Features
 
